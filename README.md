@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# First Web Scraping App
+
+A Next.js web application for scraping and filtering laptop prices from Jumia Kenya and job listings from LinkedIn. Includes advanced filtering, beautiful UI, and dynamic meta data for each page.
+
+## Features
+
+- **Jumia Laptops Scraper**: Scrape laptop prices, images, categories, and subcategories from Jumia Kenya.
+- **LinkedIn Jobs Scraper**: Find and filter jobs in Kenya or remote, with time filters (1hr, 6hr, 12hr, 24hr, week, month), company, location, and application mode.
+- **Advanced Filtering**: Filter by category, subcategory, company, location, and more.
+- **Modern UI**: Responsive design, hover effects, and easy navigation.
+- **Meta Data**: Each page has its own meta data for SEO and sharing.
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `src/app/laptops` — Laptops scraping page and API
+- `src/app/linkedin-jobs` — LinkedIn jobs page and API
+- `src/app/components` — Header, Footer, and shared UI
+- `public/` — Static assets and icons
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js (App Router)
+- React
+- Axios & Cheerio (for scraping)
+- Tailwind CSS (for styling)
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deploy easily on [Vercel](https://vercel.com/) or your preferred platform.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
